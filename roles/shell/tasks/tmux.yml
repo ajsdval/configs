@@ -1,0 +1,5 @@
+---
+- name: install tmux deb package
+  apt:
+    name: tmux
+    update_cache: yes

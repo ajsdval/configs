@@ -1,0 +1,14 @@
+---
+- name: install zsh deb package
+  apt:
+    name: zsh
+    update_cache: yes
+
+- name: download oh-my-zsh install script
+  get_url: 
+    url: https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh
+    dest: /tmp/install-oh-my-zsh.sh
+    mode: 0755
+
+- name: execute oh-my-zsh install script
+  shell: /tmp/install-oh-my-zsh.sh
