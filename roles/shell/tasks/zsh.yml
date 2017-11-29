@@ -3,6 +3,7 @@
   apt:
     name: zsh
     update_cache: yes
+  become: true
 
 - name: download oh-my-zsh install script
   get_url: 

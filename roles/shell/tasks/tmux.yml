@@ -3,3 +3,4 @@
   apt:
     name: tmux
     update_cache: yes
+  become: true
