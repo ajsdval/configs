@@ -3,11 +3,25 @@
     <state version="4" enabled="true" />
     <globalmarks />
     <filemarks>
-      <file name="$USER_HOME$/src/github.groupondev.com/zeus/client/.gitignore" timestamp="1481818266592">
-        <mark key="[" line="74" column="0" />
-        <mark key="]" line="74" column="0" />
-        <mark key="." line="74" column="0" />
-        <mark key="^" line="73" column="5" />
+      <file name="$USER_HOME$/src/github.groupondev.com/zeus/server/pagerduty.go" timestamp="1482354427722">
+        <mark key="[" line="8" column="3" />
+        <mark key="]" line="8" column="4" />
+        <mark key="^" line="8" column="4" />
+        <mark key="." line="8" column="4" />
+      </file>
+      <file name="$USER_HOME$/src/github.groupondev.com/zeus/client/client/constants.py" timestamp="1484172467731">
+        <mark key="[" line="10" column="28" />
+        <mark key="]" line="10" column="35" />
+        <mark key="." line="10" column="35" />
+        <mark key="^" line="10" column="35" />
+      </file>
+      <file name="/a.dummy" timestamp="1484075459347">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/src/github.groupondev.com/zeus/zeus.pages.github.groupondev.com/docs/README.md" timestamp="1482265323631">
+        <mark key="[" line="72" column="32" />
+        <mark key="]" line="68" column="0" />
+        <mark key="." line="68" column="0" />
       </file>
       <file name="$USER_HOME$/src/github.com/CentOS/sig-cloud-instance-build/docker/Dockerfile" timestamp="1481857852559">
         <mark key="[" line="0" column="0" />
@@ -15,11 +29,73 @@
         <mark key="^" line="1" column="0" />
         <mark key="." line="1" column="0" />
       </file>
-      <file name="$USER_HOME$/src/github.groupondev.com/zeus/server/pagerduty.go" timestamp="1482354427722">
-        <mark key="[" line="8" column="3" />
-        <mark key="]" line="8" column="4" />
-        <mark key="^" line="8" column="4" />
-        <mark key="." line="8" column="4" />
+      <file name="$USER_HOME$/src/github.groupondev.com/zeus/client/client/main.py" timestamp="1484152902873">
+        <mark key="'" line="3" column="10" />
+        <mark key="[" line="97" column="0" />
+        <mark key="]" line="97" column="0" />
+        <mark key="." line="97" column="0" />
+        <mark key="^" line="103" column="58" />
+      </file>
+      <file name="$USER_HOME$/src/github.groupondev.com/zeus/client/README.md" timestamp="1484071270578">
+        <mark key="[" line="32" column="42" />
+        <mark key="]" line="29" column="40" />
+        <mark key="." line="29" column="40" />
+        <mark key="^" line="29" column="40" />
+      </file>
+      <file name="$USER_HOME$/src/github.groupondev.com/zeus/zeus.pages.github.groupondev.com/docs/FAQ.md" timestamp="1482264728618">
+        <mark key="[" line="28" column="0" />
+        <mark key="]" line="28" column="0" />
+        <mark key="." line="28" column="0" />
+      </file>
+      <file name="$APPLICATION_CONFIG_DIR$/scratches/Learning" timestamp="1527601393986">
+        <mark key="[" line="13" column="27" />
+      </file>
+      <file name="$USER_HOME$/src/github.groupondev.com/zeus/client/Dockerfile" timestamp="1484176369044">
+        <mark key="'" line="12" column="51" />
+        <mark key="[" line="32" column="31" />
+        <mark key="]" line="32" column="25" />
+        <mark key="." line="32" column="25" />
+        <mark key="^" line="32" column="25" />
+      </file>
+      <file name="$USER_HOME$/src/github.groupondev.com/zeus/server/github.go" timestamp="1483546954211">
+        <mark key="[" line="0" column="14" />
+      </file>
+      <file name="$USER_HOME$/src/github.groupondev.com/zeus/client/client/ansible.py" timestamp="1484067400619">
+        <mark key="[" line="7" column="17" />
+        <mark key="]" line="7" column="37" />
+        <mark key="." line="7" column="37" />
+        <mark key="^" line="7" column="37" />
+      </file>
+      <file name="$USER_HOME$/src/github.groupondev.com/zeus/client/.gitignore" timestamp="1481818266592">
+        <mark key="[" line="74" column="0" />
+        <mark key="]" line="74" column="0" />
+        <mark key="." line="74" column="0" />
+        <mark key="^" line="73" column="5" />
+      </file>
+      <file name="$USER_HOME$/src/github.groupondev.com/zeus/client/client/logger.py" timestamp="1484174914523">
+        <mark key="'" line="131" column="29" />
+        <mark key="[" line="132" column="0" />
+        <mark key="]" line="132" column="0" />
+        <mark key="." line="132" column="0" />
+        <mark key="^" line="132" column="22" />
+      </file>
+      <file name="$USER_HOME$/src/github.groupondev.com/zeus/server/main.go" timestamp="1483716918766">
+        <mark key="[" line="17" column="19" />
+        <mark key="]" line="17" column="22" />
+        <mark key="." line="17" column="22" />
+        <mark key="^" line="17" column="22" />
+      </file>
+      <file name="$USER_HOME$/src/github.groupondev.com/zeus/server/zeus.go" timestamp="1483717958289">
+        <mark key="[" line="35" column="20" />
+        <mark key="]" line="35" column="19" />
+        <mark key="^" line="35" column="19" />
+        <mark key="." line="35" column="19" />
+      </file>
+      <file name="$USER_HOME$/src/github.groupondev.com/zeus/client/ansible.cfg" timestamp="1484177558590">
+        <mark key="[" line="1" column="28" />
+        <mark key="]" line="1" column="32" />
+        <mark key="^" line="1" column="32" />
+        <mark key="." line="1" column="32" />
       </file>
       <file name="$USER_HOME$/src/github.groupondev.com/zeus/zeus.pages.github.groupondev.com/docs/SUMMARY.md" timestamp="1482266611466">
         <mark key="[" line="10" column="0" />
@@ -27,15 +103,10 @@
         <mark key="^" line="3" column="0" />
         <mark key="." line="10" column="0" />
       </file>
-      <file name="/a.dummy" timestamp="1484075459347">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="$USER_HOME$/src/github.groupondev.com/zeus/client/client/main.py" timestamp="1484152902873">
-        <mark key="'" line="3" column="10" />
-        <mark key="[" line="97" column="0" />
-        <mark key="]" line="97" column="0" />
-        <mark key="." line="97" column="0" />
-        <mark key="^" line="103" column="58" />
+      <file name="$USER_HOME$/src/github.groupondev.com/zeus/client/zeus.spec" timestamp="1484178047456">
+        <mark key="[" line="23" column="0" />
+        <mark key="]" line="23" column="37" />
+        <mark key="." line="23" column="0" />
       </file>
       <file name="$USER_HOME$/src/github.groupondev.com/zeus/client/client/zeus.py" timestamp="1484237741652">
         <mark key="[" line="79" column="19" />
@@ -48,11 +119,11 @@
         <mark key="]" line="170" column="0" />
         <mark key="." line="170" column="0" />
       </file>
-      <file name="$USER_HOME$/src/github.groupondev.com/zeus/client/ansible.cfg" timestamp="1484177558590">
-        <mark key="[" line="1" column="28" />
-        <mark key="]" line="1" column="32" />
-        <mark key="^" line="1" column="32" />
-        <mark key="." line="1" column="32" />
+      <file name="$USER_HOME$/IdeaProjects/Kotlin Koans/lesson1/task1/src/Task.kt" timestamp="1516034798556">
+        <mark key="[" line="0" column="28" />
+        <mark key="]" line="0" column="24" />
+        <mark key="^" line="0" column="24" />
+        <mark key="." line="0" column="24" />
       </file>
       <file name="$USER_HOME$/src/github.groupondev.com/zeus/client/client/config.py" timestamp="1484151383487">
         <mark key="[" line="38" column="0" />
@@ -60,74 +131,11 @@
         <mark key="." line="38" column="0" />
         <mark key="^" line="38" column="70" />
       </file>
-      <file name="$USER_HOME$/src/github.groupondev.com/zeus/client/client/constants.py" timestamp="1484172467731">
-        <mark key="[" line="10" column="28" />
-        <mark key="]" line="10" column="35" />
-        <mark key="." line="10" column="35" />
-        <mark key="^" line="10" column="35" />
-      </file>
       <file name="$USER_HOME$/src/github.groupondev.com/zeus/client/client/github.py" timestamp="1484153834875">
         <mark key="[" line="88" column="53" />
         <mark key="]" line="82" column="73" />
         <mark key="." line="82" column="73" />
         <mark key="^" line="82" column="73" />
-      </file>
-      <file name="$USER_HOME$/src/github.groupondev.com/ie/bolt/main.go" timestamp="1516072302272" />
-      <file name="$USER_HOME$/src/github.groupondev.com/zeus/server/main.go" timestamp="1483716918766">
-        <mark key="[" line="17" column="19" />
-        <mark key="]" line="17" column="22" />
-        <mark key="." line="17" column="22" />
-        <mark key="^" line="17" column="22" />
-      </file>
-      <file name="$USER_HOME$/src/github.groupondev.com/zeus/client/callback.py" timestamp="1483995672739">
-        <mark key="[" line="48" column="47" />
-        <mark key="]" line="48" column="47" />
-        <mark key="^" line="48" column="46" />
-        <mark key="." line="48" column="47" />
-      </file>
-      <file name="$USER_HOME$/src/github.groupondev.com/zeus/client/client/logger.py" timestamp="1484174914523">
-        <mark key="'" line="131" column="29" />
-        <mark key="[" line="132" column="0" />
-        <mark key="]" line="132" column="0" />
-        <mark key="." line="132" column="0" />
-        <mark key="^" line="132" column="22" />
-      </file>
-      <file name="$USER_HOME$/src/github.groupondev.com/zeus/client/README.md" timestamp="1484071270578">
-        <mark key="[" line="32" column="42" />
-        <mark key="]" line="29" column="40" />
-        <mark key="." line="29" column="40" />
-        <mark key="^" line="29" column="40" />
-      </file>
-      <file name="$USER_HOME$/src/github.groupondev.com/zeus/zeus.pages.github.groupondev.com/docs/README.md" timestamp="1482265323631">
-        <mark key="[" line="72" column="32" />
-        <mark key="]" line="68" column="0" />
-        <mark key="." line="68" column="0" />
-      </file>
-      <file name="$USER_HOME$/src/github.groupondev.com/zeus/zeus.pages.github.groupondev.com/docs/FAQ.md" timestamp="1482264728618">
-        <mark key="[" line="28" column="0" />
-        <mark key="]" line="28" column="0" />
-        <mark key="." line="28" column="0" />
-      </file>
-      <file name="$USER_HOME$/src/github.groupondev.com/zeus/client/zeus.spec" timestamp="1484178047456">
-        <mark key="[" line="23" column="0" />
-        <mark key="]" line="23" column="37" />
-        <mark key="." line="23" column="0" />
-      </file>
-      <file name="$USER_HOME$/src/github.groupondev.com/zeus/server/github.go" timestamp="1483546954211">
-        <mark key="[" line="0" column="14" />
-      </file>
-      <file name="$USER_HOME$/src/github.groupondev.com/zeus/client/Dockerfile" timestamp="1484176369044">
-        <mark key="'" line="12" column="51" />
-        <mark key="[" line="32" column="31" />
-        <mark key="]" line="32" column="25" />
-        <mark key="." line="32" column="25" />
-        <mark key="^" line="32" column="25" />
-      </file>
-      <file name="$USER_HOME$/src/github.groupondev.com/zeus/server/zeus.go" timestamp="1483717958289">
-        <mark key="[" line="35" column="20" />
-        <mark key="]" line="35" column="19" />
-        <mark key="^" line="35" column="19" />
-        <mark key="." line="35" column="19" />
       </file>
       <file name="$USER_HOME$/src/github.groupondev.com/zeus/client/helper.py" timestamp="1484238037006">
         <mark key="[" line="156" column="2" />
@@ -135,17 +143,11 @@
         <mark key="." line="156" column="4" />
         <mark key="^" line="156" column="4" />
       </file>
-      <file name="$USER_HOME$/IdeaProjects/Kotlin Koans/lesson1/task1/src/Task.kt" timestamp="1516034798556">
-        <mark key="[" line="0" column="28" />
-        <mark key="]" line="0" column="24" />
-        <mark key="^" line="0" column="24" />
-        <mark key="." line="0" column="24" />
-      </file>
-      <file name="$USER_HOME$/src/github.groupondev.com/zeus/client/client/ansible.py" timestamp="1484067400619">
-        <mark key="[" line="7" column="17" />
-        <mark key="]" line="7" column="37" />
-        <mark key="." line="7" column="37" />
-        <mark key="^" line="7" column="37" />
+      <file name="$USER_HOME$/src/github.groupondev.com/zeus/client/callback.py" timestamp="1483995672739">
+        <mark key="[" line="48" column="47" />
+        <mark key="]" line="48" column="47" />
+        <mark key="^" line="48" column="46" />
+        <mark key="." line="48" column="47" />
       </file>
     </filemarks>
     <jumps>
