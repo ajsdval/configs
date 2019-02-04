@@ -1,0 +1,15 @@
+---
+
+- name: update Homebrew
+  homebrew:
+    update_homebrew: yes
+
+- name: upgrade all brew packages
+  homebrew:
+    upgrade_all: yes
+  tags: [ 'never', 'upgrade' ]
+
+- name: install Golang
+  homebrew:
+    name: go
+    state: present

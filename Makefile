@@ -1,4 +1,12 @@
 .DEFAULT_GOAL := setup
 
+playbook = pipenv run ansible-playbook
+
 setup:
-	pipenv run ansible-playbook main.yml
+	$(playbook) main.yml
+
+upgrade:
+	$(playbook) main.yml --tags upgrade
+
+preview:
+	$(playbook) main.yml --check --diff

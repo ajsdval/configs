@@ -2,7 +2,5 @@
 
 - hosts: localhost
   tasks: 
-  - name: dummy
-    shell: echo "hello"
-#   - import_role:
-#       name: shell
+  - import_role:
+      name: vim
