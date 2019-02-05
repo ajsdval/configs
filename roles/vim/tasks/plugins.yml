@@ -1,0 +1,23 @@
+---
+
+- name: add pack/tpope/start directory to .vim
+  file:
+    path: "{{ ansible_env.HOME }}/.vim/pack/tpope/start"
+    state: directory
+    mode: 0755
+ 
+- name: install tpope's vim-surround package
+  git:
+    repo: 'https://github.com/tpope/vim-surround'
+    dest: "{{ ansible_env.HOME }}/.vim/pack/tpope/start/surround"
+
+- name: add pack/scrooloose/start directory to .vim
+  file:
+    path: "{{ ansible_env.HOME }}/.vim/pack/scrooloose/start"
+    state: directory
+    mode: 0755
+
+- name: install tpope's vim-surround package
+  git:
+    repo: 'https://github.com/scrooloose/nerdtree'
+    dest: "{{ ansible_env.HOME }}/.vim/pack/scrooloose/start/nerdtree"

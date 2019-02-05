@@ -20,3 +20,5 @@
     owner: "{{ ansible_env.USER }}"
     mode: 0644
     backup: yes
+
+- import_tasks: plugins.yml

@@ -1,0 +1,14 @@
+---
+
+- name: install Visual Studio Code
+  homebrew_cask:
+    name: vscode
+    state: present
+
+- name: write settings file
+  copy:
+    src: settings.json
+    dest: "{{ ansible_env.HOME}}/Library/Application Support/Code/User/settings.json"
+    owner: "{{ ansible_env.USER }}"
+    backup: yes
+    
