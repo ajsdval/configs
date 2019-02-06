@@ -1,6 +1,6 @@
 .DEFAULT_GOAL := setup
 
-playbook = pipenv run ansible-playbook
+playbook = pipenv run ansible-playbook --ask-become-pass
 
 setup:
 	$(playbook) main.yml

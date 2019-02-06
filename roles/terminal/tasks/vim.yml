@@ -1,5 +1,26 @@
 ---
 
+- name: install vim with Homebrew
+  homebrew:
+    update_homebrew: yes
+    name: vim
+    state: present
+  tags: brew
+
+- name: install luarocks with Homebrew
+  homebrew:
+    name: luarocks
+    state: present
+  tags: brew
+
+- name: Copy a new ".vimrc file into place, backing up the original if it differs from the copied version
+  copy:
+    src: vimrc
+    dest: "{{ ansible_env.HOME }}/.vimrc"
+    owner: "{{ ansible_env.USER }}"
+    mode: 0644
+    backup: yes
+
 - name: add pack/tpope/start directory to .vim
   file:
     path: "{{ ansible_env.HOME }}/.vim/pack/tpope/start"

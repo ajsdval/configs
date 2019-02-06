@@ -3,4 +3,4 @@
 - hosts: localhost
   tasks: 
   - import_role:
-      name: vim
+      name: terminal
