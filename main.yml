@@ -2,5 +2,9 @@
 
 - hosts: localhost
   tasks: 
-  - import_role:
+  - name: Setup the termional emulator
+    import_role:
       name: terminal
+  - name: install software applications
+    import_role:
+      name: apps

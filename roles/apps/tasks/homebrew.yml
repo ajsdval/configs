@@ -13,3 +13,13 @@
   homebrew:
     name: go
     state: present
+    
+- name: install Google Chrome
+  homebrew_cask:
+    name: google-chrome
+    state: present
+
+- name: install Karabiner-Elements
+  homebrew_cask:
+    name: karabiner-elements
+    state: present
