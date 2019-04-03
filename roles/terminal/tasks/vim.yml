@@ -1,17 +1,20 @@
 ---
 
-- name: install vim with Homebrew
-  homebrew:
-    update_homebrew: yes
-    name: vim
-    state: present
-  tags: brew
+- name: Homebrew installations
+  block:
+    - name: install vim with Homebrew
+      homebrew:
+        update_homebrew: yes
+        name: vim
+        state: present
+      tags: brew
 
-- name: install luarocks with Homebrew
-  homebrew:
-    name: luarocks
-    state: present
-  tags: brew
+    - name: install luarocks with Homebrew
+      homebrew:
+        name: luarocks
+        state: present
+      tags: brew
+  when: ansible_facts['os_family'] == 'Darwin'
 
 - name: Copy a new ".vimrc file into place, backing up the original if it differs from the copied version
   copy:
@@ -26,7 +29,7 @@
     path: "{{ ansible_env.HOME }}/.vim/pack/tpope/start"
     state: directory
     mode: 0755
- 
+
 - name: install tpope's vim-surround package
   git:
     repo: 'https://github.com/tpope/vim-surround'

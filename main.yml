@@ -2,7 +2,7 @@
 
 - hosts: localhost
   tasks: 
-  - name: Setup the termional emulator
+  - name: Setup the terminal emulator
     import_role:
       name: terminal
   - name: install software applications
