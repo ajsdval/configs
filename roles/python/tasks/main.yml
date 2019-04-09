@@ -1,9 +1,4 @@
 ---
 
-- name: install Python3
-  homebrew:
-    name: python3
-    state: present
-    update_homebrew: yes
-
 - import_tasks: pip.yml
+

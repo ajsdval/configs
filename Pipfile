@@ -7,10 +7,6 @@ verify_ssl = true
 
 [packages]
 ansible = "*"
-pyyaml = ">=4.2b1"
 
 [requires]
-python_version = "3.7"
-
-[pipenv]
-allow_prereleases = true
+python_version = "3.6"

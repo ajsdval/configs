@@ -1,3 +1,7 @@
 ---
 
 # https://sshuttle.readthedocs.io/en/stable/installation.html
+
+- name: install Python pip packages
+  pip:
+    name: thefuck

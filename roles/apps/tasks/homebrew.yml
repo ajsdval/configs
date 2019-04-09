@@ -13,7 +13,7 @@
   homebrew:
     name: go
     state: present
-    
+
 - name: install Google Chrome
   homebrew_cask:
     name: google-chrome

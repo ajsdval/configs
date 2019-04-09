@@ -5,7 +5,7 @@
     name: zsh
     update_cache: yes
   become: true
-  when: ansible_facts['os_family'] == "Ubuntu"
+  when: ansible_facts['os_family'] == "Debian"
 
 - name: install zsh brew package
   homebrew:
@@ -20,7 +20,7 @@
   become: yes
 
 - name: download oh-my-zsh install script
-  get_url: 
+  get_url:
     url: https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh
     dest: /tmp/install-oh-my-zsh.sh
     mode: 0755

@@ -1,14 +1,22 @@
 ---
 
 - name: install Visual Studio Code
-  homebrew_cask:
-    name: vscode
-    state: present
+  block:
+    - homebrew_cask:
+      name: vscode
+      state: present
 
-- name: write settings file
-  copy:
-    src: settings.json
-    dest: "{{ ansible_env.HOME}}/Library/Application Support/Code/User/settings.json"
-    owner: "{{ ansible_env.USER }}"
-    backup: yes
-    
+    - name: write settings file
+      copy:
+        src: settings.json
+        dest: "{{ ansible_env.HOME}}/Library/Application Support/Code/User/settings.json"
+        owner: "{{ ansible_env.USER }}"
+        backup: yes
+  when: ansible_facts['os_family'] == 'Darwin'
+
+- name: install Visual Studio Code
+  snap:
+    name:
+      - code
+    classic: yes
+  when: ansible_facts['os_family'] == 'Debian'
