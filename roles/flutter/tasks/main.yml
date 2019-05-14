@@ -1,0 +1,47 @@
+---
+
+# - name: Download and extract Flutter
+#   unarchive:
+#     src: https://storage.googleapis.com/flutter_infra/releases/stable/macos/flutter_macos_v1.5.4-hotfix.2-stable.zip
+#     dest: /usr/local/var
+#     remote_src: yes
+- name: Symlink Flutter executable
+  file:
+    src: /usr/local/var/flutter/bin/flutter
+    dest: /usr/local/bin/flutter
+    state: link
+- name: Install the Android toolchain
+  homebrew_cask:
+    name: android-studio
+    state: present
+- name: Accept android licenses
+  shell: flutter doctor --android-licenses
+- name: XCode iOS toolchain install
+  shell: xcode-select --switch /Applications/Xcode.app/Contents/Developer
+  become: yes
+- name: Install usbmuxd
+  homebrew:
+    name: usbmuxd
+    state: head
+- name: Link usbmuxd
+  homebrew:
+    name: usbmuxd
+    state: linked
+- name: Install libimobiledevice
+  homebrew:
+    name: libimobiledevice
+    state: head
+- name: Install ideviceinstaller
+  homebrew:
+    name: ideviceinstaller
+    state: present
+- name: Install ios-deploy
+  homebrew:
+    name: ios-deploy
+    state: present
+- name: Install cocoapods
+  homebrew:
+    name: cocoapods
+    state: present
+- name: Pod Setup
+  shell: pod setup

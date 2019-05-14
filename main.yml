@@ -2,13 +2,16 @@
 
 - hosts: localhost
   tasks:
-  - name: Setup the terminal emulator
+  # - name: Setup the terminal emulator
+  #   import_role:
+  #     name: terminal
+  # - name: install software applications
+  #   import_role:
+  #     name: apps
+  - name: install Flutter
     import_role:
-      name: terminal
-  - name: install software applications
-    import_role:
-      name: apps
-  - name: install Python3 packages with pip
-    import_role:
-      name: python
+      name: flutter
+  # - name: install Python3 packages with pip
+  #   import_role:
+  #     name: python
 
