@@ -2,15 +2,19 @@
 
 - hosts: localhost
   tasks:
-  # - name: Setup the terminal emulator
-  #   import_role:
-  #     name: terminal
+  - name: Setup the terminal emulator
+    import_role:
+      name: terminal
+  - name: install macOS applications
+    import_role:
+      name: apps
+    when: ansible_facts['os_family'] == "Darwin"
   # - name: install software applications
   #   import_role:
   #     name: apps
-  - name: install Flutter
-    import_role:
-      name: flutter
+  # - name: install Flutter
+  #   import_role:
+  #     name: flutter
   # - name: install Python3 packages with pip
   #   import_role:
   #     name: python

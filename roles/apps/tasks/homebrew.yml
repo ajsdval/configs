@@ -14,12 +14,24 @@
     name: go
     state: present
 
-- name: install Google Chrome
+- name: application install
   homebrew_cask:
-    name: google-chrome
+    name:
+      - dash
+      - docker
+      - java
+      - logitech-options
+      - slack
+      - spotify
+      - visual-studio-code
+      - zoomus
     state: present
-
-- name: install Karabiner-Elements
-  homebrew_cask:
-    name: karabiner-elements
-    state: present
+- homebrew_cask:
+    name:
+      - choosy
+      - firefox
+      - google-backup-and-sync
+      - google-chrome
+      - karabiner-elements
+      - thinkorswim
+    state: absent

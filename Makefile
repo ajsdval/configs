@@ -1,6 +1,6 @@
 .DEFAULT_GOAL := setup
 
-playbook = python3 -m pipenv run ansible-playbook --ask-become-pass
+playbook = source .env/bin/activate && ansible-playbook --ask-vault-pass --ask-become-pass
 
 lint:
 	$(playbook) main.yml --syntax-check

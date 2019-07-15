@@ -19,17 +19,24 @@
     shell: "{{ '/usr/local/bin/zsh' if ansible_facts.os_family == 'Darwin' else '/usr/bin/zsh' }}"
   become: yes
 
-- name: download oh-my-zsh install script
-  get_url:
-    url: https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh
-    dest: /tmp/install-oh-my-zsh.sh
-    mode: 0755
+- name: check if .oh-my-zsh file exists
+  stat:
+    path: "{{ ansible_env.HOME }}/.oh-my-zsh"
+  register: oh_my_zsh_config
 
-- name: execute oh-my-zsh install script
-  shell: /tmp/install-oh-my-zsh.sh
+- name: install oh-my-zsh
+  block:
+  - name: download oh-my-zsh install script
+    get_url:
+      url: https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh
+      dest: /tmp/install-oh-my-zsh.sh
+      mode: 0755
+  - name: execute oh-my-zsh install script
+    shell: /tmp/install-oh-my-zsh.sh
+  when: oh_my_zsh_config.stat.exists == False
 
 - name: copy .zshrc file
-  copy:
-    src: zshrc
+  template:
+    src: zshrc.j2
     dest: "{{ ansible_env.HOME }}/.zshrc"
     mode: 0644

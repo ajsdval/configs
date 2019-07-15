@@ -3,47 +3,28 @@
 - name: install Homebrew packages
   block:
     - homebrew:
-        name: "{{ item }}"
+        name:
+          - gnupg
+          - gnutls
+          - go
+          - htop
+          - jq
+          - kotlin
+          - kubernetes-helm
+          - libyubikey
+          - node
+          - openssl
+          - pandoc
+          - python3
+          - rbenv
+          - ruby
+          - sqlite
+          - the_silver_searcher
+          - tig
+          - tmux
+          - vim
+          - wget
+          - zsh
         state: present
-      with_items:
-        - gnupg
-        - gnutls
-        - go
-        - htop
-        - jq
-        - kotlin
-        - kubernetes-helm
-        - libyubikey
-        - node
-        - openssl
-        - pandoc
-        - python3
-        - rbenv
-        - ruby
-        - sqlite
-        - the_silver_searcher
-        - tig
-        - tmux
-        - vim
-        - wget
-        - zsh
-    - homebrew_cask:
-        name: "{{ item }}"
-        state: present
-      with_items:
-        - choosy
-        - dash
-        - docker
-        - firefox
-        - google-backup-and-sync
-        - google-chrome
-        - java
-        - karabiner-elements
-        - logitech-options
-        - sketch
-        - slack
-        - spotify
-        - thinkorswim
-        - visual-studio-code
-        - zoomus
+
   when: ansible_facts['os_family'] == 'Darwin'

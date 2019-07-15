@@ -1,0 +1,7 @@
+README.md
+setup.py
+aws/config.egg-info/PKG-INFO
+aws/config.egg-info/SOURCES.txt
+aws/config.egg-info/dependency_links.txt
+aws/config.egg-info/requires.txt
+aws/config.egg-info/top_level.txt

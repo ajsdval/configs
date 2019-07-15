@@ -1,4 +1,18 @@
 {
+    "python.dataScience.sendSelectionToInteractiveWindow": true,
     "window.zoomLevel": 0,
-    "editor.minimap.enabled": false
+    "vim.textwidth": 80,
+    "workbench.startupEditor": "newUntitledFile",
+    "cSpell.userWords": [
+        "itertools",
+        "performant"
+    ],
+    "explorer.confirmDragAndDrop": false,
+    "git.autofetch": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "j"],
+            "after": ["<esc>"]
+        }
+   ]
 }

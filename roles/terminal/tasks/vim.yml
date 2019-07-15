@@ -4,7 +4,6 @@
   block:
     - name: install vim with Homebrew
       homebrew:
-        update_homebrew: yes
         name: vim
         state: present
       tags: brew
