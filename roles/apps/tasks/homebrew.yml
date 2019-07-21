@@ -21,6 +21,7 @@
       - docker
       - java
       - logitech-options
+      - mailplane
       - slack
       - spotify
       - visual-studio-code
