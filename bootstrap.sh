@@ -12,11 +12,16 @@ linux () {
     sudo apt install -y make python3 python3-pip python3-apt
 }
 
-python () {
+_python () {
     python3 -m pip install --upgrade pip
     python3 -m venv .env
     source .env/bin/activate
     python -m pip install ansible
+}
+
+_cdk () {
+    npm install -g aws-cdk
+    cdk init aws --language=python
 }
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
@@ -25,5 +30,5 @@ elif [[ "$OSTYPE" == "linux-gnu" ]]; then
     linux
 fi
 
-python
+_python
 make
