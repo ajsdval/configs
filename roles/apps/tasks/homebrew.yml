@@ -19,6 +19,7 @@
     name:
       - dash
       - docker
+      - firefox
       - java
       - logitech-options
       - mailplane
@@ -30,7 +31,6 @@
 - homebrew_cask:
     name:
       - choosy
-      - firefox
       - google-backup-and-sync
       - google-chrome
       - karabiner-elements
