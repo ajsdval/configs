@@ -18,6 +18,7 @@
           - python3
           - rbenv
           - ruby
+          - skaffold
           - sqlite
           - the_silver_searcher
           - tig
