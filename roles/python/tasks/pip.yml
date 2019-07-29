@@ -5,3 +5,4 @@
 - name: install Python pip packages
   pip:
     name: thefuck
+    executable: pip3
