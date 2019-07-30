@@ -9,13 +9,13 @@ darwin () {
 }
 
 linux () {
-    sudo apt install -y make python3 python3-pip python3-apt
+    sudo apt install -y make aptitude python3 python3-apt python3-pip python3-venv
 }
 
 _python () {
     python3 -m pip install --upgrade pip
     python3 -m venv .env
-    source .env/bin/activate
+    . .env/bin/activate
     python -m pip install ansible
 }
 
