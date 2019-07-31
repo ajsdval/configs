@@ -1,7 +1,8 @@
 ---
 
+- import_tasks: zsh.yml
+- import_tasks: ssh.yml
 - import_tasks: git.yml
 - import_tasks: brew.yml
 - import_tasks: vim.yml
 - import_tasks: tmux.yml
-- import_tasks: zsh.yml
