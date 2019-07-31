@@ -1,0 +1,6 @@
+---
+
+- name: set ssh config
+  template:
+    src: config.j2
+    dest: "{{ ansible_env.HOME }}/.ssh/config"

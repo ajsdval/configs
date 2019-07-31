@@ -1,0 +1,12 @@
+# {{ ansible_managed }}
+
+User ansdval
+IdentityFile ~/.ssh/id_ed25519
+
+Host *
+    UseKeychain     yes
+
+Host ansdval
+    User            admin
+    HostName        {{ sdval_ip_address }}
+    IdentityFile    ~/.ssh/lightsail.pem
