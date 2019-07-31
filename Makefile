@@ -1,6 +1,6 @@
 .DEFAULT_GOAL := setup
 
-playbook = . .env/bin/activate && ansible-playbook --ask-vault-pass --ask-become-pass -i inventory
+playbook = . .env/bin/activate && ansible-playbook --ask-vault-pass --ask-become-pass
 
 lint:
 	$(playbook) main.yml --syntax-check
