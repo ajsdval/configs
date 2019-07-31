@@ -11,8 +11,19 @@
     "git.autofetch": true,
     "vim.insertModeKeyBindings": [
         {
-            "before": ["j", "j"],
-            "after": ["<esc>"]
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<esc>"
+            ]
         }
-   ]
+    ],
+    "aws.samcli.location": "/usr/local/bin/sam",
+    "aws.telemetry": false,
+    "aws.profile": "default",
+    "python.formatting.provider": "yapf",
+    "python.dataScience.askForKernelRestart": false,
+    "terminal.integrated.shell.linux": "/usr/bin/zsh"
 }
