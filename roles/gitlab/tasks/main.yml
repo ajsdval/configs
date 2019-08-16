@@ -1,0 +1,19 @@
+---
+
+- name: copy Yubikey RSA public key
+  copy:
+    src: yubikey.pub
+    dest: "{{ ansible_env.HOME }}/.ssh/yubikey.pub"
+    mode: '0644'
+
+- name: configure gl-config for ssh
+  template:
+    src: gl-config.j2
+    dest: "{{ ansible_env.HOME }}/.ssh/gl-config"
+    mode: '0644'
+
+- name: setup zsh gl-aliases file for zshrc to source
+  copy:
+    src: gl-aliases
+    dest: "{{ ansible_env.HOME }}/.gl-aliases"
+    mode: '0644'

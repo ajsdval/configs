@@ -5,11 +5,16 @@
     - homebrew_cask:
       name: vscode
       state: present
-
     - name: write settings file
       copy:
         src: settings.json
         dest: "{{ ansible_env.HOME}}/Library/Application Support/Code/User/settings.json"
+        owner: "{{ ansible_env.USER }}"
+        backup: yes
+    - name: write keybindgins file
+      copy:
+        src: keybindings.json
+        dest: "{{ ansible_env.HOME}}/Library/Application Support/Code/User/keybindings.json"
         owner: "{{ ansible_env.USER }}"
         backup: yes
   when: ansible_facts['os_family'] == 'Darwin'

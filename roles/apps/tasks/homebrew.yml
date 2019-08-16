@@ -14,15 +14,15 @@
     name: go
     state: present
 
-- name: application install
+- name: application install and removal
   homebrew_cask:
     name:
       - dash
       - docker
+      - dropbox
       - firefox
       - java
       - logitech-options
-      - mailplane
       - slack
       - spotify
       - visual-studio-code
@@ -34,5 +34,6 @@
       - google-backup-and-sync
       - google-chrome
       - karabiner-elements
+      - mailplane
       - thinkorswim
     state: absent

@@ -1,0 +1,15 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+cmd+]",
+        "command": "workbench.action.terminal.focusNext"
+    },
+    {
+        "key": "ctrl+cmd+[",
+        "command": "workbench.action.terminal.focusPrevious"
+    },
+    {
+        "key": "ctrl+cmd+,",
+        "command": "workbench.action.terminal.rename"
+    }
+]

@@ -1,0 +1,4 @@
+---
+
+yubikey_pub_path: "{{ ansible_env.HOME }}/.ssh/yubikey.pub"
+unix_user: asandoval

@@ -1,0 +1,18 @@
+# {{ ansible_managed }}
+# All of the below configuraiton files are availanble in
+# https://gitlab.com/gitlab-com/runbooks/tree/master/howto
+
+User sdval
+PreferredAuthentications publickey
+
+Host *.gitlab-production.internal
+        ProxyJump                       lb-bastion.gprd.gitlab.com
+
+Host *.gitlab-staging-1.internal
+        ProxyJump                       lb-bastion.gstg.gitlab.com
+
+Host gstg-console
+        HostName                        console-01-sv-gstg.c.gitlab-staging-1.internal
+
+Host *.gitlab-testbed.internal
+        ProxyJump                       lb-bastion.testbed.gitlab.com

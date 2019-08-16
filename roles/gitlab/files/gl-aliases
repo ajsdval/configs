@@ -1,0 +1,2 @@
+alias gl="cd $HOME/Workspaces/gitlab"
+alias gstg-db="ssh -F $HOME/.ssh/gl-config sdval-db@gstg-console

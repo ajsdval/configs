@@ -108,9 +108,12 @@ export PATH="$HOME/.local/bin:/usr/local/opt/ruby/bin:/usr/local/sbin:$PATH"
 eval $(thefuck --alias doh)
 # eval "$(rbenv init -)"
 export GPG_TTY=$(tty)
-alias gl="cd ~/Gitlab"
 alias be="bundle exec"
 alias ggrep="git --no-pager grep"
+
+if [ -f ~/.gl-aliases ]; then
+    . ~/.gl-aliases
+fi
 
 function key-refresh {
   echo "kill gpg-agent"

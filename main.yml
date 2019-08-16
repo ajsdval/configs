@@ -12,10 +12,13 @@
   - name: install software applications
     import_role:
       name: apps
-  - name: install Flutter
+  - name: set GitLab specific configuration files
     import_role:
-      name: flutter
-    when: ansible_facts['os_family'] == "Darwin"
+      name: gitlab
+  # - name: install Flutter
+  #   import_role:
+  #     name: flutter
+  #   when: ansible_facts['os_family'] == "Darwin"
   - name: install Python3 packages with pip
     import_role:
       name: python
